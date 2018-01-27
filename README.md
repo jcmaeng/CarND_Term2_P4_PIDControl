@@ -30,7 +30,7 @@
 5. Select project 4
 
 ## Result
-* Tuned values
--- Kp = -0.5
--- Ki = -0.005
--- Kd = -15
+#### Tuned values
+  - Kp = -0.5
+  - Ki = -0.005
+  - Kd = -15
