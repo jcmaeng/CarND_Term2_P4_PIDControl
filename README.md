@@ -3,7 +3,7 @@
 ![simulator screen capture](./images/sim_capture.png)
 
 ## Goals
-* Estimate the state of a vehicle with given radar and lidar data via UKF(Unscented Kalman Filter)
+* Keep the center of the road with PID control
 
 ## Files
 * README.md: this file
@@ -21,10 +21,16 @@
 * uWebSocketIO from [here](https://github.com/uNetworking/uWebSockets)
 * *simulator* from [here](https://github.com/udacity/self-driving-car-sim/releases/)
 
-## Test Method and Result
+## Test Method
 0. run install-*.sh for installing uWebSockets library
 1. In the shell prompt, type **cmake**
 2. Then type **make**
 3. Run **./pid**
 4. Run simulator from another shell or file explorer!!
 5. Select project 4
+
+## Result
+* Tuned values
+ - Kp = -0.5
+ - Ki = -0.005
+ - Kd = -15
