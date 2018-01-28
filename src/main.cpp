@@ -34,9 +34,9 @@ int main(int argc, char *argv[])
 
   PID pid;
   // TODO: Initialize the pid variable.
-  double kp = -0.5    //std::atof(argv[1]);
-  double ki = -0.005  //std::atof(argv[2]);
-  double kd = -15     //std::atof(argv[3]);
+  double kp = -0.5;    //std::atof(argv[1]);
+  double ki = -0.005;  //std::atof(argv[2]);
+  double kd = -15;     //std::atof(argv[3]);
 
   pid.Init(kp, ki, kd);
 
