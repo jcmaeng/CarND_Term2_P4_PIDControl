@@ -29,8 +29,29 @@
 4. Run simulator from another shell or file explorer!!
 5. Select project 4
 
-## Result
-#### Tuned values
+## Reflection and Result
+
+#### 1. Tuning PID Gain
+###### Kp : proportional gain
+###### Ki : integration gain
+###### Kd : derivertive gain
+
+(1) Kp=-0.5 Ki=0 Kd=0
+  - Car tries to track the center but off the track after the first corner with oscillation increasing
+  
+(2) Kp=-0.5 Ki=0 Kd=-5
+  - Good tracking but too many oscillation during and after left corners
+
+(3) Kp=-0.5 Ki=-0.001 Kd=-5
+  - Improved offset from center but still too many oscillation during and after corners
+  
+(4) Kp=-0.5 Ki=-0.005 Kd=-15
+  - Good tracking with reduced oscillation. This shows good result. (Final values)
+
+#### 2. Improvements
+- May need to control `throttle` to achieve more stability in the curve. But to do this, I need data for predicted path from the simulator.
+
+#### 3. Tuned values
   - Kp = -0.5
   - Ki = -0.005
   - Kd = -15
