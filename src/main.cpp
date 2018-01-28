@@ -34,9 +34,16 @@ int main(int argc, char *argv[])
 
   PID pid;
   // TODO: Initialize the pid variable.
-  double kp = -0.5;    //std::atof(argv[1]);
-  double ki = -0.005;  //std::atof(argv[2]);
-  double kd = -15;     //std::atof(argv[3]);
+
+  // for receiving parameters from the commandline arguments
+  double kp = std::atof(argv[1]);
+  double ki = std::atof(argv[2]);
+  double kd = std::atof(argv[3]);
+
+  // final values
+  // double kp = -0.5;    //std::atof(argv[1]);
+  // double ki = -0.005;  //std::atof(argv[2]);
+  // double kd = -15;     //std::atof(argv[3]);
 
   pid.Init(kp, ki, kd);
 
@@ -53,8 +60,9 @@ int main(int argc, char *argv[])
         if (event == "telemetry") {
           // j[1] is the data JSON object
           double cte = std::stod(j[1]["cte"].get<std::string>());
-          double speed = std::stod(j[1]["speed"].get<std::string>());
-          double angle = std::stod(j[1]["steering_angle"].get<std::string>());
+          /* for submission, to eliminate warnings */
+          // double speed = std::stod(j[1]["speed"].get<std::string>());
+          // double angle = std::stod(j[1]["steering_angle"].get<std::string>());
           double steer_value;
           /*
           * TODO: Calcuate steering value here, remember the steering value is
