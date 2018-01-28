@@ -36,14 +36,14 @@ int main(int argc, char *argv[])
   // TODO: Initialize the pid variable.
 
   // for receiving parameters from the commandline arguments
-  double kp = std::atof(argv[1]);
-  double ki = std::atof(argv[2]);
-  double kd = std::atof(argv[3]);
+  // double kp = std::atof(argv[1]);
+  // double ki = std::atof(argv[2]);
+  // double kd = std::atof(argv[3]);
 
   // final values
-  // double kp = -0.5;    //std::atof(argv[1]);
-  // double ki = -0.005;  //std::atof(argv[2]);
-  // double kd = -15;     //std::atof(argv[3]);
+  double kp = -0.5;    //std::atof(argv[1]);
+  double ki = -0.005;  //std::atof(argv[2]);
+  double kd = -15;     //std::atof(argv[3]);
 
   pid.Init(kp, ki, kd);
 
