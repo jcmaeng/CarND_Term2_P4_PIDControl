@@ -36,21 +36,21 @@
 ###### Ki : integration gain
 ###### Kd : derivertive gain
 
-1) Kp=-0.5 Ki=0 Kd=0
+(1) Kp=-0.5 Ki=0 Kd=0
   - Car tries to track the center but off the track after the first corner with oscillation increasing
   
-2) Kp=-0.5 Ki=0 Kd=-5
+(2) Kp=-0.5 Ki=0 Kd=-5
   - Good tracking but too many oscillation during and after left corners
 
-3) Kp=-0.5 Ki=-0.001 Kd=-5
+(3) Kp=-0.5 Ki=-0.001 Kd=-5
   - Slightly smoother but still too many oscillation during and after corners
   
-4) Kp=-0.5 Ki=-0.005 Kd=-15
+(4) Kp=-0.5 Ki=-0.005 Kd=-15
   - Good tracking with slightly more smoother and reduced oscillation
-#### Improvements
+#### 2. Improvements
 - May need to control 'throttle' to achieve more stability in the curve
 
-#### Tuned values
+#### 3. Tuned values
   - Kp = -0.5
   - Ki = -0.005
   - Kd = -15
