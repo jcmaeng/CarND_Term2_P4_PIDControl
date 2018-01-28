@@ -43,12 +43,13 @@
   - Good tracking but too many oscillation during and after left corners
 
 (3) Kp=-0.5 Ki=-0.001 Kd=-5
-  - Slightly smoother but still too many oscillation during and after corners
+  - Improved offset from center but still too many oscillation during and after corners
   
 (4) Kp=-0.5 Ki=-0.005 Kd=-15
-  - Good tracking with slightly more smoother and reduced oscillation
+  - Good tracking with reduced oscillation. This shows good result. (Final values)
+
 #### 2. Improvements
-- May need to control 'throttle' to achieve more stability in the curve
+- May need to control `throttle` to achieve more stability in the curve. But to do this, I need data for predicted path from the simulator.
 
 #### 3. Tuned values
   - Kp = -0.5
