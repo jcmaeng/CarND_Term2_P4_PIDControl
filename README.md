@@ -40,12 +40,15 @@
   - Car tries to track the center but off the track after the first corner with oscillation increasing
   
 (2) Kp=-0.5 Ki=0 Kd=-5
-  - Good tracking but too many oscillation during and after left corners
+  - Add Kd for reducing oscillation
+  - Too many oscillation during and after left corners and some offset from the center after oscillation
 
 (3) Kp=-0.5 Ki=-0.001 Kd=-5
+  - Add Ki for improving offset from the center
   - Improved offset from center but still too many oscillation during and after corners
   
 (4) Kp=-0.5 Ki=-0.005 Kd=-15
+  - Increase Ki and Kd to improve offset and reduce oscillation
   - Good tracking with reduced oscillation. This shows good result. (Final values)
 
 #### 2. Improvements
